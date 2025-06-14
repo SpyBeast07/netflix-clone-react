@@ -5,8 +5,11 @@ import search_icon from '../../assets/images/search_icon.svg'
 import bell_icon from '../../assets/images/bell_icon.svg'
 import profile_img from '../../assets/images/profile_img.svg'
 import caret_icon from '../../assets/images/caret_icon.svg'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
     return (
         <div className='navbar'>
             <div className="navbar-left">
@@ -28,7 +31,7 @@ const Navbar = () => {
                     <img src={profile_img} alt="Profile" className='profile' />
                     <img src={caret_icon} alt="Drop Down" />
                     <div className="dropdown">
-                        <p>Sign Out of Netflix</p>
+                        <p onClick={() => navigate('/')}>Sign Out of Netflix</p>
                     </div>
                 </div>
             </div>

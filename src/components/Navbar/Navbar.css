@@ -66,6 +66,7 @@
     text-decoration: underline;
     z-index: 1;
     display: none;
+    cursor: pointer;
 }
 
 .navbar .dropdown p {
@@ -75,4 +76,5 @@
 
 .navbar-profile:hover .dropdown {
     display: block;
+    cursor: pointer;
 }

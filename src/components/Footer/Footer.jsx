@@ -14,10 +14,11 @@ const Footer = () => {
                 <img src={instagram_icon} alt="Instagram" />
                 <img src={facebook_icon} alt="Facebook" />
             </div>
-            
+
             <div className="question">
                 Questions? Call <span>000-800-919-1743</span>
             </div>
+
             <div className="footer-menu">
                 <div className="footer-item">
                     <a href="">FAQ</a>
