@@ -126,15 +126,6 @@ button.btn-red {
     font-weight: 500;
 }
 
-.btn-red-sm {
-    padding: 6px 14px;
-    background-color: red;
-    color: white;
-    border: none;
-    font-weight: 600;
-    font-size: 14px;
-}
-
 .onboard-buttons {
     display: flex;
     align-items: center;
