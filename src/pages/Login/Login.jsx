@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Login.css'
 import logo from '../../assets/images/logo.svg'
 import Footer from '../../components/Footer/Footer'
@@ -6,6 +6,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        document.title = 'Netflix';
+    }, []);
 
     return (
         <div className='login'>

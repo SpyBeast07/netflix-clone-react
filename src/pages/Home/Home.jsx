@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import hero_banner from '../../assets/images/hero_banner.png'
@@ -9,6 +9,10 @@ import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
+    useEffect(() => {
+        document.title = 'Netflix';
+    }, []);
+
     return (
         <div className='home'>
             <Navbar />
