@@ -1,18 +1,26 @@
 import React from 'react'
 import './Footer.css'
-import youtube_icon from '../../assets/images/youtube_icon.svg'
-import twitter_icon from '../../assets/images/twitter_icon.svg'
+import linkedin_icon from '../../assets/images/linkedin_icon.svg'
 import instagram_icon from '../../assets/images/instagram_icon.svg'
-import facebook_icon from '../../assets/images/facebook_icon.svg'
+import twitter_icon from '../../assets/images/twitter_icon.svg'
+import gmail_icon from '../../assets/images/gmail_icon.svg'
 
 const Footer = () => {
     return (
         <div className='footer'>
             <div className="footer-icons">
-                <img src={youtube_icon} alt="Youtube" />
-                <img src={twitter_icon} alt="Twitter" />
-                <img src={instagram_icon} alt="Instagram" />
-                <img src={facebook_icon} alt="Facebook" />
+                <a href="https://www.linkedin.com/in/kushagra-gupta-0a4b49239/" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedin_icon} alt="LinkedIn" />
+                </a>
+                <a href="https://www.instagram.com/k_u_s_h_a_g_r_a._/" target="_blank" rel="noopener noreferrer">
+                    <img src={instagram_icon} alt="Instagram" />
+                </a>
+                <a href="https://x.com/Kushagra7503" target="_blank" rel="noopener noreferrer">
+                    <img src={twitter_icon} alt="Twitter" />
+                </a>
+                <a href="mailto:kushagra7503@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src={gmail_icon} alt="Gmail" />
+                </a>
             </div>
 
             <div className="question">
