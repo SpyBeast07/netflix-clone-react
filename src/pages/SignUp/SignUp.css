@@ -10,6 +10,11 @@ body {
     background-color: black;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 /* Background Image */
 .main {
     background-image: url('../../assets/images/bg.jpg');
@@ -150,9 +155,13 @@ button.btn-red {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 70vw;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .secImg {
@@ -219,7 +228,33 @@ footer {
     padding-bottom: 0px;
 }
 
+.ready {
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
 @media screen and (max-width: 1300px) {
+    .main {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .main .box {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+    }
+
     nav {
         max-width: 90vw;
     }
@@ -259,5 +294,85 @@ footer {
     .faq h2 {
         text-align: center;
         font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .main .box {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .onboard {
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 90vw;
+        padding: 0 20px;
+    }
+
+    .onboard-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .main input {
+        width: 100%;
+        padding-right: 16px;
+    }
+
+    .contenta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secImg img,
+    .secImg video {
+        width: 90vw;
+    }
+
+    section.contenta>div {
+        padding: 20px 0;
+    }
+
+    section.contenta>div :nth-child(1) {
+        font-size: 28px;
+    }
+
+    section.contenta>div :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .faq h2 {
+        font-size: 28px;
+    }
+
+    footer .onboard-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-field {
+        width: 100%;
+        padding-right: 16px;
+    }
+
+    .ready {
+        width: 90vw;
+        padding: 0 20px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 16px;
     }
 }

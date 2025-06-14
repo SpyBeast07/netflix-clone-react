@@ -14,14 +14,17 @@ const Navbar = () => {
         <div className='navbar'>
             <div className="navbar-left">
                 <img src={logo} alt="Netflix" />
-                <ul>
-                    <li>Home</li>
-                    <li>TV Shows</li>
-                    <li>Movies</li>
-                    <li>New & Popular</li>
-                    <li>My List</li>
-                    <li>Browse by Language</li>
-                </ul>
+                <div className="navbar-menu">
+                    <p>Browse</p>
+                    <ul>
+                        <li>Home</li>
+                        <li>TV Shows</li>
+                        <li>Movies</li>
+                        <li>New & Popular</li>
+                        <li>My List</li>
+                        <li>Browse by Language</li>
+                    </ul>
+                </div>
             </div>
             <div className="navbar-right">
                 <img src={search_icon} alt="Search" className='icons' />

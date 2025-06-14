@@ -7,6 +7,10 @@
     font-size: 14px;
     color: #e5e5e5;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
     z-index: 1;
 }
 
@@ -17,7 +21,7 @@
 }
 
 .navbar-left img {
-    width: 90px;
+    width: 90px !important;
 }
 
 .navbar-left ul {
@@ -77,4 +81,93 @@
 .navbar-profile:hover .dropdown {
     display: block;
     cursor: pointer;
+}
+
+.navbar-menu p {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 1272px) {
+    .navbar-left {
+        gap: 5px;
+    }
+
+    .navbar-menu {
+        margin-left: 5px;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-menu p {
+        display: block;
+    }
+
+    .navbar-menu ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 20px;
+        top: 50px;
+        left: 0;
+        z-index: 5;
+    }
+
+    .navbar-menu:hover ul {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .navbar {
+        padding: 20px 4%;
+    }
+
+    .navbar img {
+        height: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-left {
+        margin-left: 1px;
+        gap: 1px;
+    }
+
+    .navbar-menu {
+        margin-left: 1px;
+    }
+
+    .navbar img {
+        height: 20px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
 }

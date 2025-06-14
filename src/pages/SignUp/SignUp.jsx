@@ -82,7 +82,7 @@ const SignUp = () => {
             <div className="seperator"></div>
 
             <footer>
-                <span className="onboard">
+                <span className="ready">
                     Ready to watch? Enter your email to create or restart your membership.
                 </span>
                 <div className="onboard-buttons">

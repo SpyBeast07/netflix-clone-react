@@ -61,22 +61,23 @@
     .footer-item {
         align-items: center;
     }
-}
-
-@media screen and (max-width: 1300px) {
+    
     .footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 25px;
     }
 }
-
 
 @media screen and (max-width: 832px) {
     .footer-menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 25px;
+    }
+
+    .footer {
+        max-width: 100vh;
     }
 }
 
@@ -86,12 +87,8 @@
         grid-template-columns: 1fr;
         gap: 25px;
     }
-}
 
-@media screen and (max-width: 1300px) {
     .footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 25px;
+        max-width: 100vh;
     }
 }
