@@ -104,9 +104,22 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .hero {
-        height: 40vh;
+        height: auto;
+        margin-top: 70px;
+        padding-top: 0;
+    }
+
+    .hero-caption {
+        position: static;
+        padding: 20px 4%;
+    }
+
+    .caption-img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
     }
 
     .btn img {
