@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import linkedin_icon from '../../assets/images/linkedin_icon.svg'
+import github_icon from '../../assets/images/github_icon.svg'
 import instagram_icon from '../../assets/images/instagram_icon.svg'
 import twitter_icon from '../../assets/images/twitter_icon.svg'
 import gmail_icon from '../../assets/images/gmail_icon.svg'
@@ -11,6 +12,9 @@ const Footer = () => {
             <div className="footer-icons">
                 <a href="https://www.linkedin.com/in/kushagra-gupta-0a4b49239/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedin_icon} alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/SpyBeast07" target="_blank" rel="noopener noreferrer">
+                    <img src={github_icon} alt="Github" />
                 </a>
                 <a href="https://www.instagram.com/k_u_s_h_a_g_r_a._/" target="_blank" rel="noopener noreferrer">
                     <img src={instagram_icon} alt="Instagram" />
